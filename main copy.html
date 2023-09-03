@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>カウンター</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+            crossorigin="anonymous">
+        <link rel="stylesheet" href="asset/style.css">
+    </head>
+    <body>
+        <div class="content">
+            <div class="field">
+                <div class="controller left rounded">
+                    <button id="btn_persona" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        ペルソナライド
+                    </button>
+                    <button id="btn_reset" type="button" class="btn btn-secondary">
+                        リセット
+                    </button>
+                </div>
+                <div class="controller center rounded">
+                    <button id="btn_guard" type="button" class="btn btn-primary">
+                        ガード＋
+                    </button>
+                    <div id="point_guard" class="point">0</div>
+                </div>
+                <div class="controller right rounded">
+                    <div class="trigger">
+                        <button id="btn_star_trigger" type="button" class="btn">
+                            星
+                        </button>
+                        <button id="btn_front_trigger" type="button" class="btn">
+                            前
+                        </button>
+                        <button id="btn_draw_trigger" type="button" class="btn">
+                            引
+                        </button>
+                        <button id="btn_heal_trigger" type="button" class="btn">
+                            治
+                        </button>
+                        <button id="btn_over_trigger" type="button" class="btn">
+                            超
+                        </button>
+                        <div id="point_star_trigger" class="point">0</div>
+                        <div id="point_front_trigger" class="point">0</div>
+                        <div id="point_draw_trigger" class="point">0</div>
+                        <div id="point_heal_trigger" class="point">0</div>
+                        <div id="point_over_trigger" class="point">0</div>
+                    </div>
+                </div>
+                <div class="counter front left r rounded">
+                    <button id="btn_front_left" type="button" class="btn btn-primary">
+                        パワー＋
+                    </button>
+                    <div id="point_front_left" class="point">0</div>
+                </div>
+                <div class="counter front center v rounded">
+                    <button id="btn_front_center" type="button" class="btn btn-primary">
+                        パワー＋
+                    </button>
+                    <div id="point_front_center" class="point">0</div>
+                </div>
+                <div class="counter front right r rounded">
+                    <button id="btn_front_right" type="button" class="btn btn-primary">
+                        パワー＋
+                    </button>
+                    <div id="point_front_right" class="point">0</div>
+                </div>
+                <div class="counter back left r rounded">
+                    <button id="btn_back_left" type="button" class="btn btn-primary">
+                        パワー＋
+                    </button>
+                    <div id="point_back_left" class="point">0</div>
+                </div>
+                <div class="counter back center r rounded">
+                    <button id="btn_back_center" type="button" class="btn btn-primary">
+                        パワー＋
+                    </button>
+                    <div id="point_back_center" class="point">0</div>
+                </div>
+                <div class="counter back right r rounded">
+                    <button id="btn_back_right" type="button" class="btn btn-primary">
+                        パワー＋
+                    </button>
+                    <div id="point_back_right" class="point">0</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                ...
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+        <script src="asset/counter.js"></script>
+    </body>
+</html>
