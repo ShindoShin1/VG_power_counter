@@ -5,17 +5,17 @@ var point_guard = document.getElementById('point_guard');
 var btn_else = document.getElementById('btn_else');
 var btn_persona = document.getElementById('btn_persona');
 
-// トリガー
-var btn_star_trigger = document.getElementById('btn_star_trigger');
-var btn_front_trigger = document.getElementById('btn_front_trigger');
-var btn_draw_trigger = document.getElementById('btn_draw_trigger');
-var btn_heal_trigger = document.getElementById('btn_heal_trigger');
-var btn_over_trigger = document.getElementById('btn_over_trigger');
-var point_star_trigger = document.getElementById('point_star_trigger');
-var point_front_trigger = document.getElementById('point_front_trigger');
-var point_draw_trigger = document.getElementById('point_draw_trigger');
-var point_heal_trigger = document.getElementById('point_heal_trigger');
-var point_over_trigger = document.getElementById('point_over_trigger');
+// // トリガー
+// var btn_star_trigger = document.getElementById('btn_star_trigger');
+// var btn_front_trigger = document.getElementById('btn_front_trigger');
+// var btn_draw_trigger = document.getElementById('btn_draw_trigger');
+// var btn_heal_trigger = document.getElementById('btn_heal_trigger');
+// var btn_over_trigger = document.getElementById('btn_over_trigger');
+// var point_star_trigger = document.getElementById('point_star_trigger');
+// var point_front_trigger = document.getElementById('point_front_trigger');
+// var point_draw_trigger = document.getElementById('point_draw_trigger');
+// var point_heal_trigger = document.getElementById('point_heal_trigger');
+// var point_over_trigger = document.getElementById('point_over_trigger');
 
 // 中段
 var btn_front_left = document.getElementById('btn_front_left');
@@ -57,11 +57,11 @@ var count = {
     count_back_left : 0,
     count_back_center : 0,
     count_back_right : 0,
-    count_star_trigger : 0,
-    count_front_trigger : 0,
-    count_draw_trigger : 0,
-    count_heal_trigger : 0,
-    count_over_trigger : 0,
+    // count_star_trigger : 0,
+    // count_front_trigger : 0,
+    // count_draw_trigger : 0,
+    // count_heal_trigger : 0,
+    // count_over_trigger : 0,
 }
 
 function addCount(e){
@@ -73,10 +73,10 @@ function addCount(e){
     this.counter.innerHTML = count[this.count];
 }
 
-function addTriggerCount(e){
-    count[this.count] = count[this.count] + 1;
-    this.counter.innerHTML = count[this.count];
-}
+// function addTriggerCount(e){
+//     count[this.count] = count[this.count] + 1;
+//     this.counter.innerHTML = count[this.count];
+// }
 
 function resetCount(e){
     var counters = document.getElementsByClassName('point');
@@ -158,35 +158,35 @@ window.addEventListener("load",()=>{
         handleEvent: addCount,
     });
     
-    btn_star_trigger.addEventListener('click',{ 
-        count: "count_star_trigger", 
-        counter: point_star_trigger,
-        handleEvent: addTriggerCount,
-    });
+    // btn_star_trigger.addEventListener('click',{ 
+    //     count: "count_star_trigger", 
+    //     counter: point_star_trigger,
+    //     handleEvent: addTriggerCount,
+    // });
     
-    btn_front_trigger.addEventListener('click',{ 
-        count: "count_front_trigger", 
-        counter: point_front_trigger,
-        handleEvent: addTriggerCount,
-    });
+    // btn_front_trigger.addEventListener('click',{ 
+    //     count: "count_front_trigger", 
+    //     counter: point_front_trigger,
+    //     handleEvent: addTriggerCount,
+    // });
     
-    btn_draw_trigger.addEventListener('click',{ 
-        count: "count_draw_trigger", 
-        counter: point_draw_trigger,
-        handleEvent: addTriggerCount,
-    });
+    // btn_draw_trigger.addEventListener('click',{ 
+    //     count: "count_draw_trigger", 
+    //     counter: point_draw_trigger,
+    //     handleEvent: addTriggerCount,
+    // });
     
-    btn_heal_trigger.addEventListener('click',{ 
-        count: "count_heal_trigger", 
-        counter: point_heal_trigger,
-        handleEvent: addTriggerCount,
-    });
+    // btn_heal_trigger.addEventListener('click',{ 
+    //     count: "count_heal_trigger", 
+    //     counter: point_heal_trigger,
+    //     handleEvent: addTriggerCount,
+    // });
     
-    btn_over_trigger.addEventListener('click',{ 
-        count: "count_over_trigger", 
-        counter: point_over_trigger,
-        handleEvent: addTriggerCount,
-    });
+    // btn_over_trigger.addEventListener('click',{ 
+    //     count: "count_over_trigger", 
+    //     counter: point_over_trigger,
+    //     handleEvent: addTriggerCount,
+    // });
 
     btn_persona.addEventListener('click',persona_ride);
 

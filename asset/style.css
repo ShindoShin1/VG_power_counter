@@ -76,10 +76,39 @@
 }
 
 .circle_label {
-    width: 33%;
     /* min-width: 130px; */
     background-color: #2A0505;
     color: white;
+    
+    /* パソコン向け */
+    @media (min-width: 845px) {
+        width: 33%;
+    }
+    
+    /* スマホ向け */
+    @media (max-width: 844px) {
+        width: 100%;
+    }
+}
+    
+/* パソコン向け */
+@media (min-width: 845px) {
+    .display-pc {
+        display: block;
+    }
+    .display-sp {
+        display: none;
+    }
+}
+
+/* スマホ向け */
+@media (max-width: 844px) {
+    .display-pc {
+        display: none;
+    }
+    .display-sp {
+        display: block;
+    }
 }
 
 .content_2 {
@@ -91,16 +120,12 @@
 
     /* パソコン向け */
     @media (min-width: 845px) {
-      .content_2 {
         display: block;
-      }
     }
     
     /* スマホ向け */
     @media (max-width: 844px) {
-      .content_2 {
         display: none;
-      }
     }
 }
  
@@ -130,18 +155,4 @@
     margin-right: 5%;
     font-size: 18pt;
     background-color: #AE6842;
-}
-
-/* パソコン向け */
-@media (min-width: 845px) {
-  .content_2 {
-    display: block;
-  }
-}
-
-/* スマホ向け */
-@media (max-width: 844px) {
-  .content_2 {
-    display: none;
-  }
 }
