@@ -117,3 +117,17 @@
     font-size: 18pt;
     background-color: #AE6842;
 }
+
+/* パソコン向け */
+@media (min-width: 845px) {
+  .content_2 {
+    display: block;
+  }
+}
+
+/* スマホ向け */
+@media (max-width: 844px) {
+  .content_2 {
+    display: none;
+  }
+}
