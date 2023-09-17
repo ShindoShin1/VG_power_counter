@@ -88,6 +88,20 @@
     display: flex;
     justify-content: center;
     background-color: #342428;
+
+    /* パソコン向け */
+    @media (min-width: 845px) {
+      .content_2 {
+        display: block;
+      }
+    }
+    
+    /* スマホ向け */
+    @media (max-width: 844px) {
+      .content_2 {
+        display: none;
+      }
+    }
 }
  
 .adder {
